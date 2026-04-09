@@ -35,7 +35,7 @@ const ShopCategory = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
               
               <div className="absolute bottom-0 left-0 p-8 w-full transform group-hover:-translate-y-4 transition-transform duration-500">
-                <p className="text-brand-accent font-medium text-sm mb-2">{card.subtitle}</p>
+                <p className="text-brand-secondary font-medium text-sm mb-2">{card.subtitle}</p>
                 <h3 className="text-3xl font-heading font-bold text-white mb-6 tracking-tight">{card.title}</h3>
                 <button className="px-6 py-3 bg-white text-brand-charcoal rounded-full font-bold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 hover:bg-brand-secondary">
                   Explore Now
