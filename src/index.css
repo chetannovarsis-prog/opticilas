@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-brand-primary: #4A3728;
+  --color-brand-secondary: #FEF9E7;
+  --color-brand-accent: #A68A64;
+  --color-brand-cream: #F9F6F2;
+  --color-brand-charcoal: #1F1F1F;
+
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+}
+
+@layer base {
+  body {
+    @apply font-body bg-brand-cream text-brand-charcoal;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+/* Custom Utilities */
+.glass-effect {
+  @apply bg-white/70 backdrop-blur-md border border-white/20;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-primary to-brand-accent;
+}
